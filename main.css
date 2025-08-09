@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "brillantregular";
+  src: url("./assets/fonts/brillant-webfont.woff2") format("woff2"),
+    url("./assets/fonts/brillant-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "ngetic_modernregular";
+  src: url("./assets/fonts/ngeticmodern-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/ngeticmodern-regular-webfont.woff") format("woff");
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+h1 {
+  font-family: "brillantregular", sans-serif;
+  text-align: center;
+  font-size: 6vh;
+  color: #603f26;
+  text-shadow: 0 0 10px rgb(107, 84, 57);
+}
+h2 {
+  font-family: "ngetic_modernregular", sans-serif;
+  text-align: center;
+  font-size: 3vh;
+  color: #493628;
+  text-shadow: 0 0 10px rgb(107, 84, 57);
+}
+hr {
+  width: 50vh;
+  margin: 20px auto;
+  border-color: #493628;
+}
+.animation {
+  animation: moveUpDown 10s ease-in-out infinite;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/914390/pexels-photo-914390.jpeg")
+    center center/cover no-repeat;
+  filter: blur(1.7px);
+  z-index: -1;
+  min-width: 100vw;
+  min-height: 100vh;
+  transition: background-size 0.3s;
+  left: 0;
+  top: 0;
+}
+
+main {
+  background: #e4c59e
+    url(https://images.template.net/516311/Modern-Cafe-Menu-Background-Template-edit-online.png)
+    center center/cover no-repeat;
+  color: #35312a;
+  width: 450px;
+  height: 850px;
+  border-radius: 20px;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 0 40px 2px rgb(219, 174, 119);
+  background-size: cover; /* Ensures background always covers main */
+  background-position: center; /* Keeps background centered */
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: auto;
+  padding-bottom: 50px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#header-hr2 {
+  margin-bottom: 50px;
+}
+#menu-title {
+  font-family: "brillantregular", sans-serif;
+  font-size: 35px;
+  color: #7a4535;
+  text-shadow: 0 0 10px #f7c954;
+  padding-top: 10px;
+}
+#menu-hr {
+  width: 250px;
+  margin-top: -12px;
+  margin-right: auto px;
+  border-color: #7a4535;
+  opacity: 0.4;
+}
+
+#menu-1 p {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 22px;
+  line-height: 0.1;
+  text-align: left;
+  color: #7a4535;
+  text-shadow: #35312a 0px 0px 13px;
+}
+#coffee-icon {
+  width: 150px;
+  margin-left: 220px;
+  margin-top: -230px;
+  margin-bottom: 300px;
+  opacity: 0.8;
+  position: relative;
+  fill: #7a4535;
+}
+#cake-icon {
+  width: 150px;
+  margin-left: -220px;
+  margin-top: -500px;
+  opacity: 0.8;
+  color: #7a4535;
+}
+.desserts {
+  font-family: "Lavishly Yours", cursive;
+  font-size: 22px;
+  line-height: 0.1;
+  text-align: right;
+  color: #7a4535;
+  text-shadow: #35312a 0px 0px 13px;
+  margin-top: -550px
+}
